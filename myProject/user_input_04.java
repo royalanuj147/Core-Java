@@ -9,13 +9,13 @@ public class user_input_04 {
 		
 		String fname ;
 		String lname ;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter your first ");
-		fname = sc.nextLine();
-		
-		System.out.println("Enter your last ");
-		lname = sc.nextLine();
-		
+		try (Scanner sc = new Scanner(System.in)) {
+			System.out.println("Enter your first ");
+			fname = sc.nextLine();
+			
+			System.out.println("Enter your last ");
+			lname = sc.nextLine();
+		}
 		System.out.println("Your name is "+ fname+" " + lname);
 		
 	}
